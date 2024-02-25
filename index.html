@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- to make the vide play in loop we use loop and muted for making it play wiithout sound -->
+    <!-- controls are not used becase we dont want to stop and play video rather it should be played continue -->
+    <video autoplay loop muted>  
+        <source src="video (1080p) (1).mp4" type="video/mp4">
+    </video>
+    <form class="form">
+        <div class="container"> 
+            <h3 style="color: rgb(32, 175, 180); font-family: cursive; text-align: center;">To be the part of the consert<br>........register here........</h3>
+        
+        <!-- for input fields -->
+        <label>first name</label>
+        <input  class="input" for="fname"type="text" required><br><br>
+        <label>last name</label>
+        <input for="lname"type="text" required><br><br>
+        <label>email</label>
+        <input for="mail" type="email" required><br><br>
+        <label>mobile number</label>
+        <input for="num" type="number" required><br><br>
+
+        <!-- for radio button -->
+        <label>choose gender</label>
+        <input type="radio" name="gender_button" value="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender_button" value="female">
+        <label for="female">female</label><br><br>
+
+        <!-- for date field -->
+        <label for="bday" > date of birth</label>
+        <input type="date" name="birthday" required><br><br>
+
+        <!-- for drop down -->
+        <label for="no_of_pass">number of passes</label>
+        <select name="no_of_pass">
+            <option value="3">3</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select><br><br>
+
+        <!-- for checkbox -->
+        <label>make sure you have</label>
+        <input type="checkbox" name="proof1" value="Adhar">
+        <label for="Adhar">Adhar</label>
+        <input type="checkbox" name="proof2" value="Ticket">
+        <label for="Ticket">Ticket</label>
+        <br><br>
+
+        <!-- for text area -->
+        <label>write a message to us</label>
+        <textarea name="message" rows="5" cols="40">
+            </textarea><br><br>
+        <input type="submit">
+
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
